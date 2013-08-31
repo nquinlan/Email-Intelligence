@@ -6,15 +6,15 @@
 
 Email Inteligence identifies the following service providers:
 
-    * Amazon SES
-    * Constant Contact
-    * iContact
-    * Mailchimp
-    * Mailgun
-    * Mailjet
-    * Mandrill
-    * Postmark
-    * SendGrid
+* Amazon SES
+* Constant Contact
+* iContact
+* Mailchimp
+* Mailgun
+* Mailjet
+* Mandrill
+* Postmark
+* SendGrid
 
 ## License
 
