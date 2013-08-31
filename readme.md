@@ -5,7 +5,8 @@
 ## Email Infrastructure Providers Identified
 
 Email Inteligence identifies the following service providers:
-	* Amazon SES
+
+    * Amazon SES
     * Constant Contact
     * iContact
     * Mailchimp
