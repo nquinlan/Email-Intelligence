@@ -1,10 +1,10 @@
-# Email Inteligence
+# Email Intelligence
 
-![Email Inteligence](http://d.pr/i/66NH+) Email Intelligence is a chrome extension that displays the email infrastructure provider sent an email to your gmail account.
+![Email Intelligence](http://d.pr/i/66NH+) Email Intelligence is a Chrome Extension that displays the email infrastructure provider sent an email to your Gmail account.
 
 ## Email Infrastructure Providers Identified
 
-Email Inteligence identifies the following service providers:
+Email Intelligence identifies the following service providers:
 
 * Amazon SES
 * Bronto
