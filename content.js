@@ -75,7 +75,7 @@ window.addEventListener("message", function(event) {
 		}else if( rawEmail.match(/^X-Roving-ID:/m) ) {
 			service = {name: "Constant Contact", url: "https://www.constantcontact.com"};
 		}else if( rawEmail.match(/^X-ICPINFO:/m) ) {
-			service = {name: "iContact", url: "http://www.icontact.com/"};
+			service = {name: "iContact", url: "https://www.icontact.com/"};
 		}
 
 		if(service.name){
