@@ -7,6 +7,7 @@
 Email Inteligence identifies the following service providers:
 
 * Amazon SES
+* Bronto
 * Constant Contact
 * iContact
 * Mailchimp

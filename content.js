@@ -76,6 +76,8 @@ window.addEventListener("message", function(event) {
 			service = {name: "Constant Contact", url: "https://www.constantcontact.com"};
 		}else if( rawEmail.match(/^X-ICPINFO:/m) ) {
 			service = {name: "iContact", url: "https://www.icontact.com/"};
+		}else if( rawEmail.match(/d=bronto;/m) ) {
+			service = {name: "Bronto", url: "http://bronto.com/"};
 		}
 
 		if(service.name){

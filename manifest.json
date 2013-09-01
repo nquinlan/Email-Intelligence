@@ -15,6 +15,7 @@
 
   "web_accessible_resources" : [
     "providers/amazon-ses.png",
+    "providers/bronto.png",
     "providers/constant-contact.png",
     "providers/icontact.png",
     "providers/mailchimp.png",
