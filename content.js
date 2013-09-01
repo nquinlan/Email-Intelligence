@@ -84,13 +84,13 @@ window.addEventListener("message", function(event) {
 			// Remove any current icon
 			var currentIcon = document.getElementById("EIicon");
 			if(currentIcon){
-				element.parentNode.removeChild(currentIcon);
+				currentIcon.parentNode.removeChild(currentIcon);
 			}
 
 			// Attempt to find the place to put the icon in the gmail interface
 			var h1s = document.getElementsByTagName("h1");
 			for (var i = h1s.length - 1; i >= 0; i--) {
-				if(h1s[i].getAttribute("class").match("ha")){
+				if(h1s[i].getAttribute("class") && h1s[i].getAttribute("class").match("ha")){
 
 					var serviceLink = document.createElement("a");
 					serviceLink.setAttribute("id", "EIicon");
