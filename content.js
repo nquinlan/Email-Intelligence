@@ -1,14 +1,12 @@
 function documentInformationAgent () {
 
-	console.log("script injected");
-
 	function EICheck () {
 		try {
 			if(typeof window.GLOBALS == "undefined"){
 				setTimeout(EICheck, 500);
 			}else{
 				var locationInfo = location.href.match(/\/(\w+?)$/);
-				console.log(locationInfo);
+				
 				if(locationInfo && locationInfo[1]){
 
 					var auth = window.GLOBALS[9],
@@ -46,8 +44,6 @@ var informationAgentScript = document.createElement('script');
 informationAgentScript.appendChild(document.createTextNode('('+ documentInformationAgent +')();'));
 (document.body || document.head || document.documentElement).appendChild(informationAgentScript);
 
-
-console.log("event listener");
 window.addEventListener("message", function(event) {
 	
 	// Only accept messages from the window
