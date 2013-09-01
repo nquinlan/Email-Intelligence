@@ -1,21 +1,21 @@
 # Email Intelligence
 
-Email Intelligence is a Chrome Extension that displays which email infrastructure provider sent an email to your Gmail account. ![Email Intelligence](https://raw.github.com/nquinlan/Email-Intelligence/master/icons/16x16.png)
+![Email Intelligence](https://raw.github.com/nquinlan/Email-Intelligence/master/icons/16x16.png) Email Intelligence is a Chrome Extension that displays which email infrastructure provider sent an email to your Gmail account.
 
 ## Email Infrastructure Providers Identified
 
 Email Intelligence identifies the following service providers:
 
-* Amazon SES ![Amazon SES](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/amazon-ses.png)
-* Bronto ![Bronto](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/bronto.png)
-* Constant Contact ![Constant Contact](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/constant-contact.png)
-* iContact ![iContact](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/icontact.png)
-* Mailchimp ![Mailchimp](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailchimp.png)
-* Mailgun ![Mailgun](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailgun.png)
-* Mailjet ![Mailjet](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailjet.png)
-* Mandrill ![Mandrill](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mandrill.png)
-* Postmark ![Postmark](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/postmark.png)
-* SendGrid ![SendGrid](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/sendgrid.png)
+* ![Amazon SES](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/amazon-ses.png) Amazon SES
+* ![Bronto](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/bronto.png) Bronto
+* ![Constant Contact](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/constant-contact.png) Constant Contact
+* ![iContact](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/icontact.png) iContact
+* ![Mailchimp](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailchimp.png) Mailchimp
+* ![Mailgun](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailgun.png) Mailgun
+* ![Mailjet](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailjet.png) Mailjet
+* ![Mandrill](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mandrill.png) Mandrill
+* ![Postmark](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/postmark.png) Postmark
+* ![SendGrid](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/sendgrid.png) SendGrid
 
 ## License
 
