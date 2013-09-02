@@ -27,16 +27,10 @@ function documentInformationAgent () {
 		} catch (e) {}
 	}
 	
-	// Perhaps this is better to move into an event listener on the Extension Side
-	window.EILastLocation = document.location.href;
-	setInterval(function () {
-		if(window.EILastLocation != document.location.href){
-			window.EILastLocation = document.location.href;
-			EICheck();
-		}
-	}, 250);
+	window.onpopstate = EICheck;
 
-	EICheck();
+	// A bad way to try to check on initial page load
+	document.onload = setTimeout(EICheck, 2000);
 }
 
 // Inject Information Agent
