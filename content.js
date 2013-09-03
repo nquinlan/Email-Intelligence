@@ -72,6 +72,8 @@ window.addEventListener("message", function(event) {
 			service = {name: "iContact", url: "https://www.icontact.com/"};
 		}else if( rawEmail.match(/d=bronto.com;/) ) {
 			service = {name: "Bronto", url: "http://bronto.com/"};
+		}else if( rawEmail.match(/^X-MarketoID:/m) ) {
+			service = {name: "Marketo", url: "https://www.marketo.com/"};
 		}
 
 		if(service.name){

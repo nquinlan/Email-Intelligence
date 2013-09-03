@@ -16,6 +16,7 @@ Email Intelligence identifies the following service providers:
 * ![Mailgun](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailgun.png) Mailgun
 * ![Mailjet](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailjet.png) Mailjet
 * ![Mandrill](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mandrill.png) Mandrill
+* ![Marketo](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/marketo.png) Marketo
 * ![Postmark](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/postmark.png) Postmark
 * ![SendGrid](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/sendgrid.png) SendGrid
 
