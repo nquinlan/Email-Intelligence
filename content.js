@@ -74,6 +74,8 @@ window.addEventListener("message", function(event) {
 			service = {name: "Bronto", url: "http://bronto.com/"};
 		}else if( rawEmail.match(/^X-MarketoID:/m) ) {
 			service = {name: "Marketo", url: "https://www.marketo.com/"};
+		}else if( rawEmail.match(/^X-DynectEmail-Msg-Key:/m) ) {
+			service = {name: "Dyn", url: "https://dyn.com/"};
 		}
 
 		if(service.name){
