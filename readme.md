@@ -2,6 +2,8 @@
 
 ![Email Intelligence](https://raw.github.com/nquinlan/Email-Intelligence/master/icons/16x16.png) Email Intelligence is a Chrome Extension that displays which email infrastructure provider sent an email to your Gmail account.
 
+[Email Intelligence may be downloaded through the Chrome Webstore](https://chrome.google.com/webstore/detail/email-intelligence/lfakdgkibojdjngeijmhbkmdkfnbfamm)
+
 ## Email Infrastructure Providers Identified
 
 Email Intelligence identifies the following service providers:
