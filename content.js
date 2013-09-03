@@ -76,6 +76,8 @@ window.addEventListener("message", function(event) {
 			service = {name: "Marketo", url: "https://www.marketo.com/"};
 		}else if( rawEmail.match(/^X-DynectEmail-Msg-Key:/m) ) {
 			service = {name: "Dyn", url: "https://dyn.com/"};
+		}else if( rawEmail.match(/^X-SMTPCOM-Tracking-Number:/m) ) {
+			service = {name: "SMTP.com", url: "https://smtp.com/"};
 		}
 
 		if(service.name){

@@ -25,7 +25,8 @@
     "providers/mandrill.png",
     "providers/marketo.png",
     "providers/postmark.png",
-    "providers/sendgrid.png"
+    "providers/sendgrid.png",
+    "providers/smtp.com.png"
   ],
 
   "icons": {
