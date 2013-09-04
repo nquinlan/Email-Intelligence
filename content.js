@@ -80,6 +80,8 @@ window.addEventListener("message", function(event) {
 			service = {name: "SMTP.com", url: "https://smtp.com/"};
 		}else if( rawEmail.match(/^X-SFDC-User:/m) ) {
 			service = {name: "Salesforce", url: "https://www.salesforce.com/"};
+		}else if( rawEmail.match(/^x-job: \d{3,}_\d{3,}$/m) && rawEmail.match(/mta[\w-]*\.[\w-\.]+\.[a-z]{2,}/i) ) { // Two checks as x-job is not proprietary 
+			service = {name: "ExactTarget", url: "http://www.exacttarget.com/"};
 		}
 
 		if(service.name){

@@ -13,6 +13,7 @@ Email Intelligence identifies the following service providers:
 * ![Constant Contact](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/constant-contact.png) Constant Contact
 * ![iContact](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/icontact.png) iContact
 * ![Dyn](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/dyn.png) Dyn
+* ![ExactTarget](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/exacttarget.png) ExactTarget
 * ![Mailchimp](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailchimp.png) Mailchimp
 * ![Mailgun](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailgun.png) Mailgun
 * ![Mailjet](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailjet.png) Mailjet
