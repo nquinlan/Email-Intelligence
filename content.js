@@ -78,6 +78,8 @@ window.addEventListener("message", function(event) {
 			service = {name: "Dyn", url: "https://dyn.com/"};
 		}else if( rawEmail.match(/^X-SMTPCOM-Tracking-Number:/m) ) {
 			service = {name: "SMTP.com", url: "https://smtp.com/"};
+		}else if( rawEmail.match(/^X-SFDC-User:/m) ) {
+			service = {name: "Salesforce", url: "https://www.salesforce.com/"};
 		}
 
 		if(service.name){

@@ -19,6 +19,7 @@ Email Intelligence identifies the following service providers:
 * ![Mandrill](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mandrill.png) Mandrill
 * ![Marketo](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/marketo.png) Marketo
 * ![Postmark](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/postmark.png) Postmark
+* ![Salesforce](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/salesforce.png) Salesforce
 * ![SendGrid](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/sendgrid.png) SendGrid
 * ![SMTP.com](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/smtp.com.png) SMTP.com
 
