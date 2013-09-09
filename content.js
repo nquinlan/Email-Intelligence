@@ -90,6 +90,8 @@ window.addEventListener("message", function(event) {
 			service = {name: "Responsys", url: "https://www.responsys.com/"};
 		}else if( rawEmail.match(/^X-Mailer: sailthru.com$/m) ) {
 			service = {name: "Sailthru", url: "https://www.sailthru.com/"};
+		}else if( rawEmail.match(/^X-EMV-MemberId:/m) ) {
+			service = {name: "Emailvision", url: "https://www.emailvision.com/"};
 		}
 
 		if(service.name){
