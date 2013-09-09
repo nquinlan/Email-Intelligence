@@ -3,7 +3,7 @@
 
   "name": "Email Intelligence",
   "description": "Email Intelligence displays which email infrastructure provider sent an email to your gmail account.",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "content_scripts": [
       {
