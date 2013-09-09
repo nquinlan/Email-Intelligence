@@ -52,46 +52,104 @@ window.addEventListener("message", function(event) {
 
 		window.rawEmail = rawEmail;
 
+		// Amazon SES
+		if( rawEmail.match(/^X-SES-Outgoing:/m) ) {
+			service = {name: "Amazon SES", url: "http://aws.amazon.com/ses/"};
+		}
+
+		// Bronto
+		if( rawEmail.match(/d=bronto.com;/) ) {
+			service = {name: "Bronto", url: "http://bronto.com/"};
+		}
+
+		// Constant Contact
+		if( rawEmail.match(/^X-Roving-ID:/m) ) {
+			service = {name: "Constant Contact", url: "https://www.constantcontact.com"};
+		}
+
+		// Dyn
+		if( rawEmail.match(/^X-DynectEmail-Msg-Key:/m) ) {
+			service = {name: "Dyn", url: "https://dyn.com/"};
+		}
+
+		// Email Vision
+		if( rawEmail.match(/^X-EMV-MemberId:/m) ) {
+			service = {name: "Emailvision", url: "https://www.emailvision.com/"};
+		}
+
+		// ExactTarget
+		if( rawEmail.match(/^x-job: \d{3,}_\d{3,}$/m) && rawEmail.match(/mta[\d]*\.[\w-\.]+\.[a-z]{2,}/i) ) { // Two checks as x-job is not proprietary 
+			service = {name: "ExactTarget", url: "http://www.exacttarget.com/"};
+		}
+
+		// iContact
+		if( rawEmail.match(/^X-ICPINFO:/m) ) {
+			service = {name: "iContact", url: "https://www.icontact.com/"};
+		}
+
+		// Listrak
+		if( rawEmail.match(/^Received: from [\w-]+\.listrak\.com/m) ) {
+			service = {name: "Listrak", url: "https://www.listrak.com/"};
+		}
+
+		// Mailchimp
+		if( rawEmail.match(/^X-MC-User:/m) ) {
+			service = {name: "MailChimp", url: "https://mailchimp.com/"};
+		}
+		
+		// Mailgun
+		if( rawEmail.match(/^X-Mailgun-Sid:/m) ) {
+			service = {name: "Mailgun", url: "https://www.mailgun.com/"};
+		}
+
+		// Mailigen
+		if( rawEmail.match(/^X-Mailer: MailiGen/m) ) {
+			service = {name: "Mailigen", url: "http://www.mailigen.com/"};
+		}
+
+		// Mailjet
+		if( rawEmail.match(/s=mailjet;/) ) {
+			service = {name: "Mailjet", url: "https://www.mailjet.com/"};
+		}
+
+		// Mandrill
+		if( rawEmail.match(/^X-Mandrill-User:/m) ) {
+			service = {name: "Mandrill", url: "https://mandrillapp.com/"};
+		}
+
+		// Marketo
+		if( rawEmail.match(/^X-MarketoID:/m) ) {
+			service = {name: "Marketo", url: "https://www.marketo.com/"};
+		}
+
+		// Postmark
+		if( rawEmail.match(/^X-PM-Message-Id:/m) ) {
+			service = {name: "Postmark", url: "https://postmarkapp.com/"};
+		}
+
+		// Responsys
+		if( rawEmail.match(/^X-rext:/m) ) {
+			service = {name: "Responsys", url: "https://www.responsys.com/"};
+		}
+
+		// Sailthru
+		if( rawEmail.match(/^X-Mailer: sailthru.com$/m) ) {
+			service = {name: "Sailthru", url: "https://www.sailthru.com/"};
+		}
+
+		// Salesforce
+		if( rawEmail.match(/^X-SFDC-User:/m) ) {
+			service = {name: "Salesforce", url: "https://www.salesforce.com/"};
+		}
+
+		// SendGrid
 		if( rawEmail.match(/^X-(SG|SENDGRID)-EID:/m) ) {
 			service = {name: "SendGrid", url: "https://sendgrid.com/"};
-		}else if( rawEmail.match(/^X-Mandrill-User:/m) ) {
-			service = {name: "Mandrill", url: "https://mandrillapp.com/"};
-		}else if( rawEmail.match(/^X-MC-User:/m) ) {
-			service = {name: "MailChimp", url: "https://mailchimp.com/"};
-		}else if( rawEmail.match(/s=mailjet;/) ) {
-			service = {name: "Mailjet", url: "https://www.mailjet.com/"};
-		}else if( rawEmail.match(/^X-SES-Outgoing:/m) ) {
-			service = {name: "Amazon SES", url: "http://aws.amazon.com/ses/"};
-		}else if( rawEmail.match(/^X-PM-Message-Id:/m) ) {
-			service = {name: "Postmark", url: "https://postmarkapp.com/"};
-		}else if( rawEmail.match(/^X-Mailgun-Sid:/m) ) {
-			service = {name: "Mailgun", url: "https://www.mailgun.com/"};
-		}else if( rawEmail.match(/^X-Roving-ID:/m) ) {
-			service = {name: "Constant Contact", url: "https://www.constantcontact.com"};
-		}else if( rawEmail.match(/^X-ICPINFO:/m) ) {
-			service = {name: "iContact", url: "https://www.icontact.com/"};
-		}else if( rawEmail.match(/d=bronto.com;/) ) {
-			service = {name: "Bronto", url: "http://bronto.com/"};
-		}else if( rawEmail.match(/^X-MarketoID:/m) ) {
-			service = {name: "Marketo", url: "https://www.marketo.com/"};
-		}else if( rawEmail.match(/^X-DynectEmail-Msg-Key:/m) ) {
-			service = {name: "Dyn", url: "https://dyn.com/"};
-		}else if( rawEmail.match(/^X-SMTPCOM-Tracking-Number:/m) ) {
+		}
+
+		// SMTP.com
+		if( rawEmail.match(/^X-SMTPCOM-Tracking-Number:/m) ) {
 			service = {name: "SMTP.com", url: "https://smtp.com/"};
-		}else if( rawEmail.match(/^X-SFDC-User:/m) ) {
-			service = {name: "Salesforce", url: "https://www.salesforce.com/"};
-		}else if( rawEmail.match(/^x-job: \d{3,}_\d{3,}$/m) && rawEmail.match(/mta[\d]*\.[\w-\.]+\.[a-z]{2,}/i) ) { // Two checks as x-job is not proprietary 
-			service = {name: "ExactTarget", url: "http://www.exacttarget.com/"};
-		}else if( rawEmail.match(/^X-Mailer: MailiGen/m) ) {
-			service = {name: "Mailigen", url: "http://www.mailigen.com/"};
-		}else if( rawEmail.match(/^Received: from [\w-]+\.listrak\.com/m) ) {
-			service = {name: "Listrak", url: "https://www.listrak.com/"};
-		}else if( rawEmail.match(/^X-rext:/m) ) {
-			service = {name: "Responsys", url: "https://www.responsys.com/"};
-		}else if( rawEmail.match(/^X-Mailer: sailthru.com$/m) ) {
-			service = {name: "Sailthru", url: "https://www.sailthru.com/"};
-		}else if( rawEmail.match(/^X-EMV-MemberId:/m) ) {
-			service = {name: "Emailvision", url: "https://www.emailvision.com/"};
 		}
 
 		if(service.name){
