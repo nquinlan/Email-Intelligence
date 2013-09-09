@@ -16,6 +16,7 @@ Email Intelligence identifies the following service providers:
 * ![ExactTarget](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/exacttarget.png) ExactTarget
 * ![Mailchimp](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailchimp.png) Mailchimp
 * ![Mailgun](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailgun.png) Mailgun
+* ![Mailigen](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailigen.png) Mailigen
 * ![Mailjet](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailjet.png) Mailjet
 * ![Mandrill](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mandrill.png) Mandrill
 * ![Marketo](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/marketo.png) Marketo
