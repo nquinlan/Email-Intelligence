@@ -14,6 +14,7 @@ Email Intelligence identifies the following service providers:
 * ![iContact](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/icontact.png) iContact
 * ![Dyn](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/dyn.png) Dyn
 * ![ExactTarget](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/exacttarget.png) ExactTarget
+* ![Listrak](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/listrak.png) Listrak
 * ![Mailchimp](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailchimp.png) Mailchimp
 * ![Mailgun](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailgun.png) Mailgun
 * ![Mailigen](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailigen.png) Mailigen
