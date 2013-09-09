@@ -86,6 +86,8 @@ window.addEventListener("message", function(event) {
 			service = {name: "Mailigen", url: "http://www.mailigen.com/"};
 		}else if( rawEmail.match(/^Received: from [\w-]+\.listrak\.com/m) ) {
 			service = {name: "Listrak", url: "https://www.listrak.com/"};
+		}else if( rawEmail.match(/^X-rext:/m) ) {
+			service = {name: "Responsys", url: "https://www.responsys.com/"};
 		}
 
 		if(service.name){
