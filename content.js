@@ -146,7 +146,7 @@ window.addEventListener("message", function(event) {
 		}
 
 		// Silverpop
-		if( rawEmail.match(/^Received: from [\w]+\.mkt\d{3,}\.com/m) ) { // Not proprietary, but likely only Silverpop
+		if( rawEmail.match(/^Received: from [\w\.]+\.mkt\d{3,}\.com/m) ) { // Not proprietary, but likely only Silverpop
 			service = {name: "Silverpop", url: "https://www.silverpop.com/"};
 		}
 
