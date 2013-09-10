@@ -50,8 +50,6 @@ window.addEventListener("message", function(event) {
 		var rawEmail = event.data.raw,
 			service = {};
 
-		window.rawEmail = rawEmail;
-
 		// Amazon SES
 		if( rawEmail.match(/^X-SES-Outgoing:/m) ) {
 			service = {name: "Amazon SES", url: "http://aws.amazon.com/ses/"};
