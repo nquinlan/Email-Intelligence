@@ -147,6 +147,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "SendGrid", url: "https://sendgrid.com/"};
 		}
 
+		// Silverpop
+		if( rawEmail.match(/^Received: from [\w]+\.mkt\d{3,}\.com/m) ) { // Not proprietary, but likely only Silverpop
+			service = {name: "Silverpop", url: "https://www.silverpop.com/"};
+		}
+
 		// SMTP.com
 		if( rawEmail.match(/^X-SMTPCOM-Tracking-Number:/m) ) {
 			service = {name: "SMTP.com", url: "https://smtp.com/"};

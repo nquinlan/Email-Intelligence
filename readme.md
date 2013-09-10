@@ -27,6 +27,7 @@ Email Intelligence identifies the following service providers:
 * ![Sailthru](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/sailthru.png) Sailthru
 * ![Salesforce](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/salesforce.png) Salesforce
 * ![SendGrid](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/sendgrid.png) SendGrid
+* ![Silverpop](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/silverpop.png) Silverpop
 * ![SMTP.com](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/smtp.com.png) SMTP.com
 
 ## License
