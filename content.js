@@ -120,6 +120,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "Marketo", url: "https://www.marketo.com/"};
 		}
 
+		// Message Bus
+		if( rawEmail.match(/^X-Messagebus-Info:/m) ) {
+			service = {name: "Message Bus", url: "https://messagebus.com/"};
+		}
+
 		// Postmark
 		if( rawEmail.match(/^X-PM-Message-Id:/m) ) {
 			service = {name: "Postmark", url: "https://postmarkapp.com/"};
