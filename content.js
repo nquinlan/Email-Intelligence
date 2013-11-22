@@ -166,7 +166,7 @@ window.addEventListener("message", function(event) {
 		}
 
 		// Yesmail
-		if( rawEmail.match(/^Received: from [\w\.\-]+postdirect.com/m) ) {
+		if( rawEmail.match(/s=yesmail.?;/)  || rawEmail.match(/^Received: from [\w\.\-]+postdirect.com/m) ) {
 			service = {name: "Yesmail", url: "https://www.yesmail.com/"};
 		}
 
