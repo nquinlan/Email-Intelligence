@@ -160,6 +160,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "SMTP.com", url: "https://smtp.com/"};
 		}
 
+		// Yesmail
+		if( rawEmail.match(/^Received: from [\w\.\-]+postdirect.com/m) ) {
+			service = {name: "Yesmail", url: "https://www.yesmail.com/"};
+		}
+
 		if(service.name){
 			service.icon = chrome.extension.getURL("providers/" + service.name.toLowerCase().replace(" ","-") + ".png");
 
