@@ -15,6 +15,7 @@ Email Intelligence identifies the following service providers:
 * ![Dyn](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/dyn.png) Dyn
 * ![Emailvision](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/emailvision.png) Emailvision
 * ![ExactTarget](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/exacttarget.png) ExactTarget
+* ![Fishbowl](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/fishbowl.png) Fishbowl
 * ![Listrak](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/listrak.png) Listrak
 * ![Mailchimp](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailchimp.png) Mailchimp
 * ![Mailgun](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailgun.png) Mailgun

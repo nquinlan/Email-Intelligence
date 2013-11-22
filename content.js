@@ -80,6 +80,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "ExactTarget", url: "http://www.exacttarget.com/"};
 		}
 
+		// Fishbowl
+		if( rawEmail.match(/^X-Mailer: Fishbowl/m) ) {
+			service = {name: "Fishbowl", url: "https://www.fishbowl.com/"};
+		}
+
 		// iContact
 		if( rawEmail.match(/^X-ICPINFO:/m) ) {
 			service = {name: "iContact", url: "https://www.icontact.com/"};
