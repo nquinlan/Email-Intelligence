@@ -70,6 +70,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "Dyn", url: "https://dyn.com/"};
 		}
 
+		// Eloqua
+		if( rawEmail.match(/^X-elqPod:/m) ) {
+			service = {name: "Eloqua", url: "http://www.eloqua.com/"};
+		}
+
 		// Email Vision
 		if( rawEmail.match(/^X-EMV-MemberId:/m) ) {
 			service = {name: "Emailvision", url: "https://www.emailvision.com/"};

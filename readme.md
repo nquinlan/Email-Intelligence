@@ -13,6 +13,7 @@ Email Intelligence identifies the following service providers:
 * ![Constant Contact](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/constant-contact.png) Constant Contact
 * ![iContact](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/icontact.png) iContact
 * ![Dyn](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/dyn.png) Dyn
+* ![Eloqua](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/eloqua.png) Eloqua
 * ![Emailvision](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/emailvision.png) Emailvision
 * ![ExactTarget](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/exacttarget.png) ExactTarget
 * ![Fishbowl](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/fishbowl.png) Fishbowl
