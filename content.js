@@ -80,6 +80,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "Emailvision", url: "https://www.emailvision.com/"};
 		}
 
+		// Emma
+		if( rawEmail.match(/d=e2ma\.net;/m) ) {
+			service = {name: "Emma", url: "https://myemma.com/"};
+		}
+
 		// ExactTarget
 		if( rawEmail.match(/^x-job: \d{3,}_\d{3,}$/m) && rawEmail.match(/mta[\d]*\.[\w-\.]+\.[a-z]{2,}/i) ) { // Two checks as x-job is not proprietary 
 			service = {name: "ExactTarget", url: "http://www.exacttarget.com/"};
