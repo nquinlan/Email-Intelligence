@@ -95,6 +95,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "Fishbowl", url: "https://www.fishbowl.com/"};
 		}
 
+		// Google App Engine
+		if( rawEmail.match(/^X-Google-Appengine-App-Id:/m) ) {
+			service = {name: "Google App Engine", url: "https://developers.google.com/appengine/docs/python/mail/sendingmail"};
+		}
+
 		// iContact
 		if( rawEmail.match(/^X-ICPINFO:/m) ) {
 			service = {name: "iContact", url: "https://www.icontact.com/"};
