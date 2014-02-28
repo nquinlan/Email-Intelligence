@@ -195,9 +195,9 @@ window.addEventListener("message", function(event) {
 			}
 
 			// Attempt to find the place to put the icon in the gmail interface
-			var h2s = document.getElementsByTagName("h2");
-			for (var i = h2s.length - 1; i >= 0; i--) {
-				if(h2s[i].getAttribute("class") && h2s[i].getAttribute("class").match("ha")){
+			var has = document.getElementsByClassName("ha");
+			for (var i = has.length - 1; i >= 0; i--) {
+				if(has[i].getElementsByTagName("span")){
 
 					var serviceLink = document.createElement("a");
 					serviceLink.setAttribute("id", "EIicon");
@@ -211,8 +211,7 @@ window.addEventListener("message", function(event) {
 
 					serviceLink.appendChild(serviceIcon);
 					
-
-					h2s[i].appendChild(serviceLink);
+					has[i].getElementsByTagName("span")[0].appendChild(serviceLink);
 					return;
 				}
 			}
