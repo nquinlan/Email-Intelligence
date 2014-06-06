@@ -115,6 +115,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "MailChimp", url: "https://mailchimp.com/"};
 		}
 		
+		// MailerLite
+		if( rawEmail.match(/d=ml.mailersend.com;/) ) {
+			service = {name: "MailerLite", url: "https://www.mailerlite.com/"};
+		}
+		
 		// Mailgun
 		if( rawEmail.match(/^X-Mailgun-Sid:/m) ) {
 			service = {name: "Mailgun", url: "https://www.mailgun.com/"};
