@@ -21,6 +21,7 @@ Email Intelligence identifies the following service providers:
 * ![Google App Engine](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/google-app-engine.png) Google App Engine
 * ![Listrak](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/listrak.png) Listrak
 * ![Mailchimp](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailchimp.png) Mailchimp
+* ![MailerLite](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailerlite.png) MailerLite
 * ![Mailgun](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailgun.png) Mailgun
 * ![Mailigen](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailigen.png) Mailigen
 * ![Mailjet](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mailjet.png) Mailjet
