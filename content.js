@@ -66,7 +66,7 @@ window.addEventListener("message", function(event) {
 		}
 
 		// Dyn
-		if( rawEmail.match(/^X-DynectEmail-Msg-Key:/m) ) {
+		if( rawEmail.match(/^X-DynectEmail-Msg-Key:/m) || rawEmail.match(/^X-DynectEmail-Msg-Hash:/m) ) {
 			service = {name: "Dyn", url: "https://dyn.com/"};
 		}
 
