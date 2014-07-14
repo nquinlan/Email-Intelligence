@@ -17,6 +17,7 @@ Email Intelligence identifies the following service providers:
 * ![Emailvision](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/emailvision.png) Emailvision
 * ![Emma](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/emma.png) Emma
 * ![ExactTarget](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/exacttarget.png) ExactTarget
+* ![Gold Lasso](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/gold-lasso.png) Gold Lasso
 * ![Fishbowl](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/fishbowl.png) Fishbowl
 * ![Google App Engine](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/google-app-engine.png) Google App Engine
 * ![Listrak](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/listrak.png) Listrak
