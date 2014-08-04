@@ -115,6 +115,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "Listrak", url: "https://www.listrak.com/"};
 		}
 
+		// Locaweb
+		if( rawEmail.match(/^x-locaweb-id:/m) ) {
+			service = {name: "Locaweb", url: "https://www.locaweb.com.br/"};
+		}
+
 		// Mailchimp
 		if( rawEmail.match(/^X-MC-User:/m) ) {
 			service = {name: "MailChimp", url: "https://mailchimp.com/"};
