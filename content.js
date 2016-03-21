@@ -60,6 +60,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "Bronto", url: "http://bronto.com/"};
 		}
 
+		// Campaign Monitor
+		if( rawEmail.match(/^X-Complaints-To: abuse@cmail\d{1,2}\.com/m) ) {
+			service = {name: "Campaign Monitor", url: "https://www.campaignmonitor.com"};
+		}
+
 		// Constant Contact
 		if( rawEmail.match(/^X-Roving-ID:/m) ) {
 			service = {name: "Constant Contact", url: "https://www.constantcontact.com"};
