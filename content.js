@@ -206,7 +206,7 @@ window.addEventListener("message", function(event) {
 		}
 
 		if(service.name){
-			service.icon = chrome.extension.getURL("providers/" + service.name.toLowerCase().replace(" ","-") + ".png");
+			service.icon = chrome.extension.getURL("providers/" + service.name.toLowerCase().replace(/\s/g,"-") + ".png");
 
 			// Remove any current icon
 			var currentIcon = document.getElementById("EIicon");
