@@ -31,6 +31,7 @@ Email Intelligence identifies the following service providers:
 * ![Mandrill](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mandrill.png) Mandrill
 * ![Marketo](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/marketo.png) Marketo
 * ![Message Bus](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/messagebus.png) Message Bus
+* ![Mixmax](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/mixmax.png) Mixmax
 * ![Postmark](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/postmark.png) Postmark
 * ![Responsys](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/responsys.png) Responsys
 * ![Sailthru](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/sailthru.png) Sailthru

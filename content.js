@@ -165,6 +165,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "Message Bus", url: "https://messagebus.com/"};
 		}
 
+		// Mixmax
+		if( rawEmail.match(/^X-Mailer: Mixmax/m) ) {
+			service = {name: "Mixmax", url: "https://mixmax.com/"};
+		}
+
 		// Postmark
 		if( rawEmail.match(/^X-PM-Message-Id:/m) ) {
 			service = {name: "Postmark", url: "https://postmarkapp.com/"};
