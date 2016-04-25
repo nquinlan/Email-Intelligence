@@ -9,6 +9,7 @@
 Email Intelligence identifies the following service providers:
 
 * ![Amazon SES](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/amazon-ses.png) Amazon SES
+* ![BenchmarkEmail](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/benchmarkemail.png) BenchmarkEmail
 * ![Bronto](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/bronto.png) Bronto
 * ![Campaign Monitor](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/campaign-monitor.png) Campaign Monitor
 * ![Constant Contact](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/constant-contact.png) Constant Contact

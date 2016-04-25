@@ -55,6 +55,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "Amazon SES", url: "http://aws.amazon.com/ses/"};
 		}
 
+		// BenchmarkEmail.com
+		if( rawEmail.match(/www.benchmarkemail.com/) ) {
+			service = {name: "BenchmarkEmail", url: "http://benchmarkemail.com/"};
+		}
+
 		// Bronto
 		if( rawEmail.match(/d=bronto.com;/) ) {
 			service = {name: "Bronto", url: "http://bronto.com/"};
