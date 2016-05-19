@@ -39,6 +39,7 @@ Email Intelligence identifies the following service providers:
 * ![SendGrid](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/sendgrid.png) SendGrid
 * ![Silverpop](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/silverpop.png) Silverpop
 * ![SMTP.com](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/smtp.com.png) SMTP.com
+* ![VerticalResponse](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/verticalresponse.png) VerticalResponse
 * ![Yesmail](https://raw.github.com/nquinlan/Email-Intelligence/master/providers/yesmail.png) Yesmail
 
 ## License
