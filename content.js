@@ -136,7 +136,7 @@ window.addEventListener("message", function(event) {
 		}
 		
 		// Mailgun
-		if( rawEmail.match(/^X-Mailgun-Sid:/m) ) {
+		if( rawEmail.match(/^X-Mailgun-Sid:/m) || rawEmail.match(/X-Mailgun-Variables:/m) ) {
 			service = {name: "Mailgun", url: "https://www.mailgun.com/"};
 		}
 
