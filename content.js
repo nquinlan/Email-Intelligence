@@ -6,11 +6,12 @@ function documentInformationAgent () {
 				setTimeout(EICheck, 500);
 			}else{
 				var locationInfo = location.href.match(/\/(\w+?)$/);
-				
-				if(locationInfo && locationInfo[1]){
+				var threadIdElement = document.querySelector("h2[data-legacy-thread-id]")
+
+				if(threadIdElement && threadIdElement.dataset){
 
 					var auth = window.GLOBALS[9],
-						emailId = locationInfo[1];
+							threadId = threadIdElement.dataset.legacyThreadId
 
 					window.EIxhr = new XMLHttpRequest();
 					EIxhr.onreadystatechange = function () {
@@ -19,18 +20,18 @@ function documentInformationAgent () {
 						}
 					};
 
-					EIxhr.open("GET", document.location.origin + document.location.pathname + "?view=om&ui=2&ik=" + auth + "&th=" + emailId, true);
+					EIxhr.open("GET", document.location.origin + document.location.pathname + "?view=om&ui=2&ik=" + auth + "&th=" + threadId, true);
+
 					EIxhr.send();
-					
 				}
 			}
 		} catch (e) {}
 	}
-	
+
 	window.onpopstate = EICheck;
 
 	// A bad way to try to check on initial page load
-	document.onload = setTimeout(EICheck, 2000);
+	document.onload = setTimeout(EICheck, 3000);
 }
 
 // Inject Information Agent
@@ -39,14 +40,13 @@ informationAgentScript.appendChild(document.createTextNode('('+ documentInformat
 (document.body || document.head || document.documentElement).appendChild(informationAgentScript);
 
 window.addEventListener("message", function(event) {
-	
+
 	// Only accept messages from the window
 	if (event.source != window)
 		return;
 
 	// Make sure it's the right message
 	if (event.data.type && (event.data.type == "ei-mail-raw")) {
-
 		var rawEmail = event.data.raw,
 			service = {};
 
@@ -96,7 +96,7 @@ window.addEventListener("message", function(event) {
 		}
 
 		// ExactTarget
-		if( rawEmail.match(/^x-job: \d{3,}_\d{3,}$/m) && rawEmail.match(/mta[\d]*\.[\w-\.]+\.[a-z]{2,}/i) ) { // Two checks as x-job is not proprietary 
+		if( rawEmail.match(/^x-job: \d{3,}_\d{3,}$/m) && rawEmail.match(/mta[\d]*\.[\w-\.]+\.[a-z]{2,}/i) ) { // Two checks as x-job is not proprietary
 			service = {name: "ExactTarget", url: "http://www.exacttarget.com/"};
 		}
 
@@ -134,12 +134,12 @@ window.addEventListener("message", function(event) {
 		if( rawEmail.match(/^X-MC-User:/m) ) {
 			service = {name: "MailChimp", url: "https://mailchimp.com/"};
 		}
-		
+
 		// MailerLite
 		if( rawEmail.match(/d=ml.mailersend.com;/) ) {
 			service = {name: "MailerLite", url: "https://www.mailerlite.com/"};
 		}
-		
+
 		// Mailgun
 		if( rawEmail.match(/^X-Mailgun-Sid:/m) || rawEmail.match(/X-Mailgun-Variables:/m) ) {
 			service = {name: "Mailgun", url: "https://www.mailgun.com/"};
@@ -231,6 +231,7 @@ window.addEventListener("message", function(event) {
 
 			// Attempt to find the place to put the icon in the gmail interface
 			var has = document.getElementsByClassName("ha");
+
 			for (var i = has.length - 1; i >= 0; i--) {
 				if(has[i].getElementsByTagName("span")){
 
@@ -245,9 +246,11 @@ window.addEventListener("message", function(event) {
 					serviceIcon.setAttribute("style", "top:1px");
 
 					serviceLink.appendChild(serviceIcon);
-					
-					has[i].getElementsByTagName("span")[0].appendChild(serviceLink);
-					return;
+
+
+					has[i].getElementsByTagName("span")[0].insertAdjacentElement("afterend", serviceLink);
+
+					return false;
 				}
 			}
 		}
