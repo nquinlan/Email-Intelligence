@@ -205,6 +205,11 @@ window.addEventListener("message", function(event) {
 			service = {name: "SMTP.com", url: "https://smtp.com/"};
 		}
 
+		// VerticalResponse
+		if( rawEmail.match(/^X-vrfbldomain:/m) && rawEmail.match(/^X-vrpod:/m) && rawEmail.match(/^X-vrrpmm:/m) ) {
+			service = {name: "VerticalResponse", url: "http://www.verticalresponse.com/"};
+		}
+
 		// Yesmail
 		if( rawEmail.match(/s=yesmail.?;/)  || rawEmail.match(/^Received: from [\w\.\-]+postdirect.com/m) ) {
 			service = {name: "Yesmail", url: "https://www.yesmail.com/"};
